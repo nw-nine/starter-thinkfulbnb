@@ -52,6 +52,7 @@ main img {
 
 /* -------  Navigation ------- */
 
+
 header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
@@ -62,6 +63,11 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -83,6 +89,12 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form label {
@@ -104,6 +116,24 @@ form button {
   width: 100%;
 }
 
+/* -------  Abuot ------- */
+
+#about img {
+  width: 100%;
+}
+
+/* -------  ideas ------- */
+
+#ideas img {
+  width: 100%;
+}
+
+/* ------- Host ------- */
+
+#host img {
+  width: 100%;
+}
+
 /* -------  Footer ------- */
 
 footer {
@@ -117,3 +147,70 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (max-width: 368px) {
+  .logo {
+    font-size: 48px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    gap: 10px;
+  }
+
+  form div {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #about>div {
+    display: flex;
+    gap: 10px;
+    align-content: center;
+  }
+
+  .single{
+    flex: 1;
+  }
+
+  .double {
+   flex: 2;
+   align-self: center;
+  }
+
+  .row {
+    display: flex;
+    gap: 20px;
+  
+  }
+  .col {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .fourth {
+    flex: 1
+  }
+ 
+  @media all and (max-width: 937px) {
+   .logo {
+    font-size: 48px;
+   }
+   form {
+    font-size: 12px;
+   }
+   form button {
+    font-size: 12px;
+    padding-right: 10px;
+   }
+  }
+}
+
